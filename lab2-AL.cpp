@@ -55,11 +55,9 @@ void threatening(std::pair<byte,byte> positionA, std::pair<byte,byte> positionB)
 	cin >> opponent;
 	for(auto& c : opponent){c = tolower(c);}
 	if (opponent=="no"){
-		if (std::abs(positionA.first-positionB.first)==1){
-			if (std::abs(positionB.second-positionA.second)==1)	cout << "Pawn can move to B\n";
-			else cout << "Pawn can't move to B\n";
+		if ((positionA.first == positionB.first && positionB.second == positionA.second + 1) || (positionB.first - positionA.first == 1 && abs(positionB.second - positionA.second) == 1)) {
+			cout << "White peshka can be on B." << endl;
 		}
-		else cout << "Pawn can't move to B\n";
 	}
 	if (opponent=="yes"){
 		if(std::abs(positionA.first-positionB.first)==2){
