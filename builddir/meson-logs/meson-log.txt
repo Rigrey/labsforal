@@ -1,0 +1,68 @@
+Build started at 2023-10-10T13:49:33.526323
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.2.1
+Source dir: /home/rigrey/vs/01-lab-03-array-Rigrey
+Build dir: /home/rigrey/vs/01-lab-03-array-Rigrey/builddir
+Build type: native build
+Project name: lab-xx-template
+Project version: undefined
+C++ compiler for the host machine: c++ (gcc 13.2.0 "c++ (Debian 13.2.0-4) 13.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.41
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils for Debian) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+Эта программа является открытым программным обеспечением; вы можете
+распространять её согласно условиям GNU General Public License версии 3 или
+(по вашему выбору) более новой версии.
+Эта программа не имеет абсолютно никаких гарантий.
+-----------
+C++ compiler for the build machine: c++ (gcc 13.2.0 "c++ (Debian 13.2.0-4) 13.2.0")
+C++ linker for the build machine: c++ ld.bfd 2.41
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils for Debian) 2.41
+Copyright (C) 2023 Free Software Foundation, Inc.
+Эта программа является открытым программным обеспечением; вы можете
+распространять её согласно условиям GNU General Public License версии 3 или
+(по вашему выбору) более новой версии.
+Эта программа не имеет абсолютно никаких гарантий.
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Dependency gtest found: YES 1.14.0 (cached)
+Dependency gmock found: YES 1.14.0 (cached)
+Dependency gmock_main found: YES 1.14.0 (cached)
+Dependency lab found: YES undefined (overridden)
+Adding test "Lab tests"
+Dependency lab found: YES undefined (overridden)
+Build targets in project: 3
+
+Found ninja-1.11.1 at /usr/bin/ninja
+Running compile:
+Working directory:  /tmp/tmpr38qyys4
+Code:
+ int i = static_cast<int>(0);
+-----------
+Command line: `c++ /tmp/tmpr38qyys4/testfile.cpp -o /tmp/tmpr38qyys4/output.obj -D_FILE_OFFSET_BITS=64 -c -std=c++20` -> 0
+Compiler accepts -std=c++20: YES
+Running compile:
+Working directory:  /home/rigrey/vs/01-lab-03-array-Rigrey/builddir/meson-private/tmp27uw05zi
+Code:
+ 
+-----------
+Command line: `c++ /home/rigrey/vs/01-lab-03-array-Rigrey/builddir/meson-private/tmp27uw05zi/testfile.cpp -o /home/rigrey/vs/01-lab-03-array-Rigrey/builddir/meson-private/tmp27uw05zi/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-linux-gnu/13/
+programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/13/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/13/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+-----------

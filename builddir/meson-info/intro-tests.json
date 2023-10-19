@@ -1,0 +1,1 @@
+[{"cmd": ["/home/rigrey/vs/01-lab-03-array-Rigrey/builddir/tests/tests"], "env": {}, "name": "Lab tests", "workdir": null, "timeout": 30, "suite": ["lab-xx-template"], "is_parallel": true, "priority": 0, "protocol": "exitcode", "depends": ["59830eb@@tests@exe"], "extra_paths": []}]

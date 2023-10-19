@@ -1,0 +1,1 @@
+{"targets": {"/home/rigrey/vs/01-lab-03-array-Rigrey/builddir/sources/liblab.a": {"destination": "{libdir_static}/liblab.a", "tag": "devel", "subproject": null}, "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir/sandbox/sandbox": {"destination": "{bindir}/sandbox", "tag": "runtime", "subproject": null}}}

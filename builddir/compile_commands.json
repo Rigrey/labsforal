@@ -1,0 +1,56 @@
+[
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/task_1.cpp.o -MF sources/liblab.a.p/task_1.cpp.o.d -o sources/liblab.a.p/task_1.cpp.o -c ../sources/task_1.cpp",
+    "file": "../sources/task_1.cpp",
+    "output": "sources/liblab.a.p/task_1.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/task_2.cpp.o -MF sources/liblab.a.p/task_2.cpp.o.d -o sources/liblab.a.p/task_2.cpp.o -c ../sources/task_2.cpp",
+    "file": "../sources/task_2.cpp",
+    "output": "sources/liblab.a.p/task_2.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/task_3.cpp.o -MF sources/liblab.a.p/task_3.cpp.o.d -o sources/liblab.a.p/task_3.cpp.o -c ../sources/task_3.cpp",
+    "file": "../sources/task_3.cpp",
+    "output": "sources/liblab.a.p/task_3.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/task_4.cpp.o -MF sources/liblab.a.p/task_4.cpp.o.d -o sources/liblab.a.p/task_4.cpp.o -c ../sources/task_4.cpp",
+    "file": "../sources/task_4.cpp",
+    "output": "sources/liblab.a.p/task_4.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/string_tasks.cpp.o -MF sources/liblab.a.p/string_tasks.cpp.o.d -o sources/liblab.a.p/string_tasks.cpp.o -c ../sources/string_tasks.cpp",
+    "file": "../sources/string_tasks.cpp",
+    "output": "sources/liblab.a.p/string_tasks.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isources/liblab.a.p -Isources -I../sources -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -fPIC -MD -MQ sources/liblab.a.p/example.cpp.o -MF sources/liblab.a.p/example.cpp.o.d -o sources/liblab.a.p/example.cpp.o -c ../sources/example.cpp",
+    "file": "../sources/example.cpp",
+    "output": "sources/liblab.a.p/example.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Itests/tests.p -Itests -I../tests -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -DGTEST_HAS_PTHREAD=1 -MD -MQ tests/tests.p/test.cpp.o -MF tests/tests.p/test.cpp.o.d -o tests/tests.p/test.cpp.o -c ../tests/test.cpp",
+    "file": "../tests/test.cpp",
+    "output": "tests/tests.p/test.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Itests/tests.p -Itests -I../tests -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -DGTEST_HAS_PTHREAD=1 -MD -MQ tests/tests.p/example.cpp.o -MF tests/tests.p/example.cpp.o.d -o tests/tests.p/example.cpp.o -c ../tests/example.cpp",
+    "file": "../tests/example.cpp",
+    "output": "tests/tests.p/example.cpp.o"
+  },
+  {
+    "directory": "/home/rigrey/vs/01-lab-03-array-Rigrey/builddir",
+    "command": "c++ -Isandbox/sandbox.p -Isandbox -I../sandbox -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -std=c++20 -O0 -g -MD -MQ sandbox/sandbox.p/main.cpp.o -MF sandbox/sandbox.p/main.cpp.o.d -o sandbox/sandbox.p/main.cpp.o -c ../sandbox/main.cpp",
+    "file": "../sandbox/main.cpp",
+    "output": "sandbox/sandbox.p/main.cpp.o"
+  }
+]
