@@ -52,7 +52,7 @@ double ave_phys_s(std::vector<student>& studentvec) {
 int main() {
 	std::vector<student> studentvec;
 	studentvec.reserve(10);
-	for (int i = 0; i < 4; ++i) {
+	for (int i = 0; i < 10; ++i) {
 		std::string name;
 		int age;
 		int math_s;
