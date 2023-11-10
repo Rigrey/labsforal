@@ -1,2 +1,2 @@
-# **Rigrey's rep for algorithmic languages**#
+# **Rigrey's rep for algorithmic languages** #
 #Use branches to navigate#
