@@ -7,19 +7,6 @@ struct Matrix {
   size_t m_ = 0u;  // строки
   size_t size() { return this->n_ * this->m_; }
 
-  void find(const int& f_) {
-    size_t n = find_n(f_);
-    if (n != this->n_ + 1) {
-      std::string ns;
-      ns.push_back(n);
-      std::string ms;
-      ms.push_back(find_m(f_));
-      std::cout << "N is: " << ns << ". M is: " << ms << std::endl;
-      return;
-    }
-    std::cout << "Not Found!" << std::endl;
-  }
-
   void print() {
     for (size_t i = 0; i < this->n_; ++i) {
       std::cout << "| ";
