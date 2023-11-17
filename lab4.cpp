@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 struct Matrix {
   int** data_ = nullptr;
