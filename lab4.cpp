@@ -41,17 +41,6 @@ struct Matrix {
     }
     return this->n_ + 1;
   }
-
-  size_t find_m(const int& f_) {
-    for (size_t i = 0; i < this->n_; ++i) {
-      for (size_t j = 0; j < this->m_; ++j) {
-        if (this->data_[i][j] == f_) {
-          return j;
-        }
-      }
-    }
-    return this->m_ + 1;
-  }
 };
 
 void Construct(Matrix& out, size_t n, size_t m) {
@@ -71,6 +60,7 @@ void Destruct(Matrix& in) {
     delete[] in.data_[i];
   }
   delete[] in.data_;
+  in.data_ = nullptr;
 }
 
 Matrix Copy(const Matrix& matrix) {
@@ -113,12 +103,12 @@ Matrix Sub(const Matrix& a, const Matrix& b) {
 }
 
 Matrix Mult(const Matrix& a, const Matrix& b) {
-  if ((a.m_ == b.n_) && (a.n_ == b.m_)) {
+  if (a.m_ == b.n_) {
     Matrix mult;
-    Construct(mult, a.m_, b.n_);
-    for (size_t i = 0; i < mult.m_; ++i) {
-      for (size_t j = 0; j < mult.n_; ++j) {
-        for (size_t k = 0; k < a.n_; ++k) {
+    Construct(mult, a.n_, b.m_);
+    for (size_t i = 0; i < mult.n_; ++i) {
+      for (size_t j = 0; j < mult.m_; ++j) {
+        for (size_t k = 0; k < a.m_; ++k) {
           mult.data_[i][j] += a.data_[i][k] * b.data_[k][j];
         }
       }
@@ -136,6 +126,7 @@ void Transposition(Matrix& matrix) {
       temp.data_[i][j] = matrix.data_[j][i];
     }
   }
+  Destruct(matrix);
   matrix = temp;
 }
 
@@ -152,6 +143,7 @@ bool operator==(const Matrix& a, const Matrix& b) {
   }
   return false;
 }
+
 
 int main() {
   return 0;
