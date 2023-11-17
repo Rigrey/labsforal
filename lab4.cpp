@@ -15,18 +15,6 @@ struct Matrix {
       std::cout << "|" << std::endl;
     }
   }
-
- private:
-  size_t find_n(const int& f_) {
-    for (size_t i = 0; i < this->n_; ++i) {
-      for (size_t j = 0; j < this->m_; ++j) {
-        if (this->data_[i][j] == f_) {
-          return i;
-        }
-      }
-    }
-    return this->n_ + 1;
-  }
 };
 
 void Construct(Matrix& out, size_t n, size_t m) {
