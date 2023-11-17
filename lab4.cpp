@@ -22,10 +22,7 @@ void Construct(Matrix& out, size_t n, size_t m) {
   out.m_ = m;
   out.data_ = new int*[n];
   for (size_t i = 0; i < n; ++i) {
-    out.data_[i] = new int[m];
-    for (size_t j = 0; j < m; ++j) {
-      out.data_[i][j] = 0;
-    }
+    out.data_[i] = new int[m]();
   }
 }
 
