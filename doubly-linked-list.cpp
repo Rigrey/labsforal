@@ -89,7 +89,6 @@ int LinkedList::delete_element(int data) {
         }
         delete temp;
         deleted = true;
-        current = current->next;
       } else if (current == last) {
         Node* temp = last;
         last = current->prev;
@@ -109,9 +108,9 @@ int LinkedList::delete_element(int data) {
         delete temp;
         deleted = true;
         current = onemore;
-        current = current->next;
       }
     }
+    current = current->next;
   } while (current != nullptr && current != first);
   if (deleted) {
     return data;
@@ -247,8 +246,8 @@ void LinkedList::sort_list() {
       temp->next = current;
     }
   }
-  Node* currenttemp = sorted_first;
   sorted_first->prev = nullptr;
+  Node* currenttemp = sorted_first;
   while (currenttemp->next != nullptr) {
     currenttemp->next->prev = currenttemp;
     currenttemp = currenttemp->next;
@@ -297,32 +296,56 @@ int main() {
   std::vector<int> hm{6, 7, 3, 2, -19, 5};
   LinkedList f(hm);
   LinkedList h(hm);
+  std::cout << "F is cycled, H isn't." << std::endl;
+  std::cout << "Adding and deleting elements. F comes first, H is second:" << std::endl;
   f.cycle_list();
-  std::cout << f.add_element(3) << std::endl;
+  f.print_list();
+  h.print_list();
+  f.add_element(3);
   h.add_element(3);
   f.print_list();
   h.print_list();
-  std::cout << f.delete_element(3) << std::endl;
+  f.delete_element(3);
   h.delete_element(3);
   f.print_list();
   h.print_list();
+  std::cout << "Finding elements, position and size and inserting elements:" << std::endl;
   std::cout << f.find_element(-19) << std::endl;
   std::cout << h.find_pos(3) << std::endl;
   std::cout << f.size_list() << std::endl;
-  std::cout << f.insert_list(10, 6) << std::endl;
+  std::cout << h.insert_list(10, 15) << std::endl;
   f.print_list();
-  std::cout << f.insert_list(10, 8) << std::endl;
+  f.insert_list(10, 8);
   f.print_list();
-  std::cout << f.insert_list(10, 11) << std::endl;
+  f.insert_list(10, 11);
   f.print_list();
-  std::cout << f.insert_list(100, -8) << std::endl;
+  f.insert_list(100, -8);
   f.print_list();
-  std::cout << h.insert_list(-10, 4) << std::endl;
+  h.insert_list(-10, 4);
   h.print_list();
+  std::cout << "Sorting lists:" << std::endl;
   f.sort_list();
   f.print_list();
   h.sort_list();
   h.print_list();
   h.inf_print_backwards();  // only works 1 time bcs not cycled
   // f.inf_print_backwards();  // works inf bcs cycled :D
+  std::cout << "-------------------------" << std::endl;
+  std::cout << "Working with list created through one element" << std::endl;
+  LinkedList m(3);
+  m.add_element(5);
+  m.add_element(5);
+  m.add_element(5);
+  m.add_element(5);
+  m.print_list();
+  m.delete_element(5);
+  m.print_list();
+  m.add_element(-5);
+  m.add_element(-8);
+  m.add_element(17);
+  m.sort_list();
+  std::cout << m.insert_list(10, 10) << std::endl;
+  m.cycle_list();
+  m.insert_list(10, 10);
+  m.print_list();
 }
